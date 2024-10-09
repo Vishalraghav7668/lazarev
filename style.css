@@ -1,0 +1,212 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav h1{
+    font-size: 1.6vw;
+}
+nav{
+    position: fixed;
+    /* background-color: red;  */
+    display: flex;
+    align-items: flex-start;
+    height: 12vh;
+    width: 100%;
+    /* padding: 2vw 4vw; */
+    justify-content: space-between;
+    padding: 2vw 10.5vw;
+    z-index: 10;
+}
+.nav-part2
+{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+.nav-part2 h4{
+    font-size: 0.73vw;
+    font-weight: 600;
+    margin-bottom: 2.6vw;
+}
+.nav-part2 h5{
+    margin-bottom: 1vw;
+    display: none;
+    overflow: hidden;
+    /* background-color:  rgb(61, 154, 51); */
+}
+.nav-part2 h5 span{
+    font-size: 0.77vw;
+    font-weight: 400;
+    display: inline-block;
+    transform: translateY(25px);
+}
+
+/* nav:hover #nav-bottom{
+     
+    height: 150%;
+    bottom: -150%;
+    background-color: #111;
+} */
+/* #nav-bottom
+{
+    background-color: red;
+    height: 26vh;
+    top: 100%;
+    width: 79%;
+    position: absolute;
+    bottom: 0%;
+    z-index: 9;
+  
+} */
+.bottom-div
+{
+    margin-top: 2vw;
+    /* position: absolute;
+    top: 0; */
+}
+
+.bottom-div h5{
+    /* background-color: red; */
+    overflow: hidden;
+    margin-bottom: 0.4vw;
+}
+
+nav button{
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    font-size: 0.85vw;
+    font-weight: 700;
+    padding: 10px 16px;
+    padding: 10px 16px;
+    border-radius: 50px;
+    border: none;
+}
+nav button svg{
+    height: 0.8vw;
+    margin-left: 1.6vw;
+}
+#nav-bottom{
+    width: 79%;
+    height: 0vh;
+    position: absolute;
+    background-color: #111;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+}
+.bottom-div h5 span{
+    font-size: 0.75vw;
+    display: inline-block;
+    font-weight: 500;
+    opacity: 0;
+}
+
+#moving-div
+{
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    width: 44%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+}
+#moving-div .move{
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img{
+    height: 1vw;
+    margin: 0 1.2vw;
+}
+
+@keyframes mobe {
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+#blur-left
+{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to right,#111,transparent);
+
+}
+
+
+#blur-right
+{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(to right,transparent,#111);
+}
+
+
+#page1
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+#page1 h1{
+
+    font-size: 7vw;
+    font-weight: 700;
+    line-height: 7vw;
+}
+
+#page-something{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    padding: 5px 10px;
+}
+#page-something span{
+   color: rgb(64, 186, 64); 
+   padding: 2px 5px;
+   border: 1px solid rgb(46, 84, 46);
+   border-radius: 15px;
+   /* margin-top: 3vh; */
+}
+#page2
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
